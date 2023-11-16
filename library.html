@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-8">
+      <!-- Library Header -->
+      <h1 class="text-3xl font-bold mb-6">Your Library</h1>
+
+      <!-- Saved Albums -->
+      <h2 class="text-2xl font-bold mb-4">Saved Albums</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Single Album Card -->
+        <div class="bg-gray-800 p-4 rounded text-left">
+          <div class="relative">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Album"
+              class="w-full rounded mb-2"
+            />
+            <div class="absolute bottom-0 right-0 p-2 flex space-x-2">
+              <button
+                class="bg-green-400 text-white rounded-full p-2 hover:bg-green-300 material-icons"
+              >
+                library_add
+              </button>
+              <button
+                class="bg-gray-700 text-white rounded-full p-2 hover:bg-gray-600 material-icons"
+              >
+                delete
+              </button>
+            </div>
+          </div>
+          <p class="text-md font-bold">Album Name</p>
+          <p class="text-sm text-gray-400">By Singer</p>
+        </div>
+        <!-- More album cards can be added here -->
+      </div>
+    </div>
+  </body>
+</html>
